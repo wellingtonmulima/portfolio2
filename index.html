@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wellington mulima</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <header>
+        <nav id="desktop-nav">
+            <div class="logo">WM</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo">WM</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()" >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                    <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="home_content">
+                <div class="home_img">
+                    <img src="./IMG_20211206_151251_042.jpg" alt="willy" class="willy_img">
+                </div>
+                <div class="home_text">
+                    <p class="text_1">Hello there! I'm</p>
+                    <h1 class="title">Wellington Mulima</h1>
+                    <p class="text_2">Fullstack web/app developer and a junior programmer</p>
+                    <div class="btns">
+                        <button class="btn1">Download CV</button>
+                        <button class="btn2" onclick="location.href='./#contact'">Reach out</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="about_content">
+                <h1 class="abt_title">About</h1>
+                <p>I am Wellington Mulima, a fullstack web/app developer and a junior programmer. My main aim
+                    is to build dynamic responsive websites and web applications accessible throughout all devices. My skills range 
+                    from HTML, CSS, JavaScript for frontend development and Node js, Express js and Python for backend development. As a junior 
+                    programmer I mainly aim for automation and Python is my preffered programming language of choice. My long-term goal 
+                    is to become a seasoned and professional web developer and and an experienced programmer.
+                    
+                </p>
+            </div>
+        </section>
+        <section id="skills">
+            <h1 class="skill_title">Skills</h1>
+            <div class="skills-container">
+                <div class="skill">
+                    <img src="./html.png" alt="html">
+                </div>
+                <div class="skill">
+                    <img src="./css.png" alt="css">
+                </div>
+                <div class="skill">
+                    <img src="./js.png" alt="js">
+                </div>
+                <div class="skill">
+                    <img src="./python.png" alt="js">
+                </div>
+                
+            </div>
+        </section>
+        <section id="services">
+            <h1 class="service_title">Services</h1>
+            <div class="service-container">
+                <div class="service">
+                    <div class="service1">
+                        <img src="./web-development-image.webp" alt="webdev" class="service_pic">
+                    </div>
+                    <div class="service1_content">
+                        <p>I'm a full-stack Web Developer with a passion for building interactive and virtually appealing websites
+                            I strongly understand HTML5, CSS3, JavaScript and Github. And I am always looking to learn and improve my skills.
+                            I've got deep passion for creating responsive websites
+                        </p>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="service2">
+                        <img src="./NativeBase-75.png" alt="python" class="service_pic">
+                    </div>
+                    <div class="service2_content">
+                        <p>As a junior programmer, I have honed my fundamentals in Python.
+                            I'm knowledgeble in writing Python code for automation that help make it easier in carrying out reptitive tasks
+                        </p>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="service3">
+                        <img src="./web-design-header.jpg" alt="web-design">
+                    </div>
+                    <div class="service3_content">
+                        <p>As a web-designer, I have mastered the use of tools such as figma and wire-frames to build and hone my UI/UX skills.
+                            These are to assist me build virtually appealing websites for a seamless user experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h1 class="contact_title">Contact</h1>
+            <div class="contact-container">
+                <div class="contact-form">
+                    <form action="" id="contact-form">
+                        <input type="text" name="fname" id="fname" placeholder="Enter your name" maxlength="12" required>
+                        <input type="email" name="email" id="email" placeholder="Enter email" maxlength="25" required >
+                        <textarea name="message" id="message" cols="20" rows="10" placeholder="Enter message" maxlength="30" required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+               
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p>Copyright &#169; wellington mulima. All Rights Reserved</p>
+            <img src="./linkedin.png" alt="linkedIn" onclick="window.open('https://linked.com/')" class="icon">
+                    <img src="./github.png" alt="github" onclick="window.open('https://github.com/wellingtonmulima/codedark1')" class="icon">
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

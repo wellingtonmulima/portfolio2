@@ -1,0 +1,38 @@
+@media screen and (max-width:1200px){
+    #desktop-nav{
+        display: none;
+    }
+
+    #hamburger-nav{
+        display: flex;
+    }
+}
+
+@media screen and (max-width:480px){
+    #hamburger-nav{
+        max-width: 100%;
+    }
+
+
+    section{
+    height: fit-content;
+    }
+
+   #services,#skills,#contact{
+    margin-top: 5rem;
+   }
+
+   .service p{
+    font-size: 20px;
+   }
+
+   .contact-form{
+    width: 300px;
+   }
+
+   .socials{
+    max-width: 300px;
+    font-size: 14px;
+   }
+    
+}
