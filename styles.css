@@ -252,6 +252,11 @@ section{
     font-size: 2rem;
 }
 
+.service_title1,.service_title2,.service_title3{
+    color: blueviolet;
+    padding: 10px 0;
+}
+
 .service-container{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
