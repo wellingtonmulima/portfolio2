@@ -33,10 +33,12 @@
 
     .projects, .contact{
         margin-top: 2rem;
+        
     }
 
     .contact{
         height: 50vh;
+        padding: 15px 0;
     }
 
     footer{
@@ -45,8 +47,9 @@
 
 }
 
-@media screen and(max-width:600px){
+@media screen and(max-width:768px){
     .contact{
+        padding: 10px 0;
         margin-top: 20px;
         height: 40vh;
     }
