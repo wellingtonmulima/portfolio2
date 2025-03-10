@@ -142,6 +142,7 @@ nav, .nav-links{
     transform: none;
 }
 
+
 .home-content{
     margin: 3rem auto;
     display: flex;
@@ -163,6 +164,7 @@ nav, .nav-links{
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    color: white;
     .home-heading{
         font-size: 2rem;
         padding: 10px 0;
@@ -200,6 +202,7 @@ nav, .nav-links{
 .about-content{
     display: grid;
     place-items: center;
+    color: white;
 
     h2{
         padding: 10px;
