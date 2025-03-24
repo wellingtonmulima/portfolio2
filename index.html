@@ -3,208 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="wellington-mulima">
     <title>wellington mulima</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
     <header>
-        <nav id="desktop-nav">
-            <div class="logo">CODEDARK</div>
-            <div>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+    <nav id="desktop-nav">
+        <div class="logo">WM</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">WM</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-        </nav>
-            <nav id="hamburger-nav">
-                <div class="logo">CODEDARK</div>
-                <div class="hamburger-menu">
-                    <div class="hamburger-icon" onclick="toggleMenu()">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div class="menu-links">
-                        <li><a href="#home"  onclick="toggleMenu()">Home</a></li>
-                        <li><a href="#about"  onclick="toggleMenu()">About</a></li>
-                        <li><a href="#skills"  onclick="toggleMenu()">Skills</a></li>
-                        <li><a href="#services"  onclick="toggleMenu()">Services</a></li>
-                        <li><a href="#projects"  onclick="toggleMenu()">Projects</a></li>
-                        <li><a href="#contact"  onclick="toggleMenu()">Contact</a></li>
-                    </div>
-                </div>
-        </nav>
+            <div class="menu-links">
+                <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
     </header>
-    <main>
+    <main class="main-content">
         <section id="home" class="home">
             <div class="home-content">
                 <div class="home-image">
                     <figure>
-                        <img src="./assets/IMG_20211206_151251_042.jpg" alt="willy" width="100px" height="100px" class="home-image"> 
+                        <img src="./assets/IMG_20211206_151251_042.jpg" alt="willy-img" >
                     </figure>
                 </div>
                 <div class="home-txt">
-                    <h2 class="home-heading">I am Wellington Mulima</h2>
-                    <h3 class="home-heading2">A Fullstack Web/App Developer and Programmer</h3>
-                    <div class="cta-btns">
-                        <button id="btn1" class="btn" onclick="window.open('./assets/CURRICULUM VITAE 2.pdf')">Download CV</button>
-                        <button  id="btn2" class="btn" onclick="location.href='/#contact'">Reach out</button>
+                    <h1>Hello, I'm</h1>
+                    <h2>Wellington Mulima</h2>
+                    <h3>Full-stack Web/App Developer and Programmer</h3>
+                    <div class="cta">
+                        <button id="btn1" class="btn" onclick="window.open('./assets/CURRICULUM VITAE 2.pdf')">Download Cv</button>
+                        <button id="btn2" class="btn" onclick="location.href='#contact'">Reach Out</button>
                     </div>
                 </div>
             </div>
         </section>
         <section id="about" class="about">
             <div class="about-content">
-                <h2 class="about-heading">About Me</h2>
-                <p class="about-me-txt">
-                    I am a junior web-developer with expertise in creating custom,responsive and SEO - friendly
-                    websites. I am also a junior Python programmer mainly focusing on writing python code for automating repititive tasks!. 
-                    My goal is to become  a seasoned fullstack web/app developer and an experienced programmer.
+                <h2>About Me</h2>
+                <p class="abt-txt">I am a passionate web/app developer, junior python Programmer and an Agricultural Economist. Building robust
+                    and interactive websites and web-applications for organizations to make an impactful online presence
+                    is my main goal. As a programmer my main goal is to build software to assist in automating repititive tasks and optimize 
+                    performance across all fields and especially agriculture! My goal is to be a seasoned and experienced software developer and a professional programmer.
                 </p>
             </div>
         </section>
         <section id="skills" class="skills">
-            <h2>Skills</h2>
+            <h2>My Skills</h2>
             <div class="skills-container">
                 <div class="skill">
                     <figure>
                         <img src="./assets/html.png" alt="html">
+                        
                     </figure>
-                   <progress id="html" max="100" value="98">98%</progress>
+                    <progress id="skill" max="100" value="98">98%</progress>
                 </div>
                 <div class="skill">
                     <figure>
                         <img src="./assets/css.png" alt="css">
+                        
                     </figure>
-                    <progress id="html" max="100" value="95">95%</progress>
+                    <progress id="skill" max="95" value="95">95%</progress>
                 </div>
                 <div class="skill">
                     <figure>
                         <img src="./assets/js.png" alt="js">
+                       
                     </figure>
-                    <progress id="html" max="100" value="60">60%</progress>
+                    <progress id="skill" max="100" value="70">70%</progress>
                 </div>
                 <div class="skill">
                     <figure>
                         <img src="./assets/python.png" alt="python">
+                       
                     </figure>
-                    <progress id="html" max="100" value="70">70%</progress>
+                    <progress id="skill" max="100" value="75">75%</progress>
                 </div>
             </div>
-        </section>
+        </section> 
         <section id="services" class="services">
             <h2>My Services</h2>
-            <div class="service-container">
+            <div class="services-container">
                 <div class="service">
-                    <div class="service-img">
-                        <h3>WEB DEVELOPMENT</h3>
-                        <figure>
-                            <img src="./assets/web-development-image.webp" alt="" width="300px" height="300px">
-                        </figure>
-                    </div>
+                    <h3>WEB DEVELOPMENT</h3>
+                    <figure>
+                    <img src="./assets/web-development-image.webp" alt="web-dev">
+                    </figure>
                     <div class="service-content">
-                        <p>As an expert web-developer, with knowledge and skills in building pixel perfect responsive websites,
-                            my aim is to ensure client satisfaction by building captivating websites to attract and boost their businesses online
-
+                        <p>I am  focused at creating and developing next level and unique websites to meet clients satisfaction. My main aim is to ensure 
+                            that my clients make an impactful presence online with captivating websites to attract many users and ensure they make and meet
+                            many clients.<!-- My vast knowledge in web technologies tools and good mastery of web development skills plays a big role in this. 
+                            Developing responsive websites and applications across all platforms allows reach out to all levels of individuals that can access the internet.-->
                         </p>
                     </div>
                 </div>
                 <div class="service">
-                    <div class="service-img">
-                        <h3>JUNIOR PROGRAMMER</h3>
-                        <figure>
-                            <img src="./assets/NativeBase-75.png" alt="" width="300px" height="300px">
-                        </figure>
-                    </div>
+                    <h3>JUNIOR PROGRAMMER</h3>
+                    <figure>
+                    <img src="./assets/NativeBase-75.png" alt="web-dev">
+                    </figure>
+                   
                     <div class="service-content">
-                        <p>I have mastered the basics of Python programming, I am still advancing my skills to build and write code to
-                            automate repititive tasks 
+                        <p>I develop programs that help simplify and optimize production. My knowledge in Python programming and all its concepts including
+                            Object oriented programming assists in building very fast and reliable software for automation.<!-- My long term goal is to build
+                            next level computer programs to assist in all sectors from agriculture, finance, education and health -->
                         </p>
                     </div>
                 </div>
                 <div class="service">
-                    <div class="service-img">
-                        <h3>WEB DESIGN</h3>
-                        <figure>
-                            <img src="./assets/web-design-header.jpg" alt="" width="300px" height="300px">
-                        </figure>
-                    </div>
+                    <h3>WEB DESIGNER</h3>
+                    <figure>
+                    <img src="./assets/web-design-header.jpg" alt="web-dev">
+                    </figure>
                     <div class="service-content">
-                        <p>As an expert web-developer, with knowledge and skills in building pixel perfect responsive websites,
-                            by learning the use of tools such as figma and wireframes, I am mastering the designing of attractive websites
-
+                        <p>As a web-designer. My main goal is to develop pixel perfect websites and applications to boost clients and users experience, in order to
+                            attract as many clients as possible. Good mastery of design tools such as wire-frame, canva and figma tools have played a very vital role in this.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="projects" class="projects">
+      <section id="projects" class="projects">
             <h2>My Projects</h2>
             <div class="projects-container">
                 <div class="project">
-                    <div class="project1">
-                        <h3>Crop-price Tracker App</h3>
-                        <div class="project-img">
-                            <figure>
-                                <img src="./assets/crop_price_tracker.jpg" alt="crop-price" loading="lazy">
-                            </figure>
-                        </div>
-                        <div class="bttn">
-                            <button class="visit">visit</button>
-                        </div>
-                    </div>
+                    <figure>
+                        <h2>Farm Expense Tracker</h2>
+                        <img src="./assets/farm_expense_tracker.jpeg" alt="farm-expense-tracker">
+                    </figure>
+                    <button class="bttn">Visit</button>
                 </div>
                 <div class="project">
-                    <div class="project2">
-                        <h3>Farm Expense Tracker App</h3>
-                        <div class="project-img">
-                            <figure>
-                                <img src="./assets/farm_expense_tracker.jpeg" alt="farm-expense" loading="lazy">
-                            </figure>
-                        </div>
-                        <div class="bttn">
-                            <button class="visit">visit</button>
-                        </div>
-                    </div>
+                    <figure>
+                        <h2>Farm Todo-app</h2>
+                        <img src="./assets/farm_todo_app.webp" alt="farm-todo-list">
+                    </figure>
+                    <button class="bttn">Visit</button>
                 </div>
                 <div class="project">
-                    <div class="project3">
-                        <h3>Simple Farm Todo-List App</h3>
-                        <div class="project-img">
-                            <figure>
-                                <img src="./assets/farm_todo_app.webp" alt="farm-todo" loading="lazy" height="100px" width="100px">
-                            </figure>
-                        </div>
-                        <div class="bttn">
-                            <button class="visit">visit</button>
-                        </div>
-                    </div>
+                    <figure>
+                        <h2>Crop Price Tracker</h2>
+                        <img src="./assets/crop_price_tracker.jpg" alt="crop-price-tracker" height="50px" width="50px">
+                    </figure>
+                    <button class="bttn">Visit</button>
                 </div>
             </div>
-        </section>
-        <section id="contact" class="contact">
-            <h2>Contact me</h2>
+        </section> 
+       <section id="contact" class="contact">
+         <h2>Contact Me</h2>
             <div class="contact-container">
-                <img src="./assets/github.png" alt="github" class="icon" loading="lazy" onclick="location.href='https://github.com/codedark1'" >
-                <img src="./assets/linkedin.png" alt="linkedIn" class="icon" loading="lazy"  onclick="location.href='https://linkedIn.com/'">
-                <img src="./assets/Facebook_Logo_2023.png" alt="facebook" class="icon" loading="lazy"  onclick="location.href='https://facebook.com/'">
-                <img src="./assets/instagram-logo-instagram-icon-transparent-free-png.png" alt="instagram" class="icon" loading="lazy"  onclick="location.href='https://instagram.com/'">
-                <img src="./assets/x-social-media-logo-icon.png" alt="twitter" class="icon" loading="lazy"  onclick="location.href='https://twitter.com/'">
+                <ul class="contact-links">
+                    <li><img src="./assets/linkedin.png" alt="linkedIn" class="icon"><a href="https://linkedin.com/wellingtonmulima" target="_blank"> LinkedIn</a></li>
+                    <li><img src="./assets/github.png" alt="github" class="icon"><a href="https://github.com/codedark1" target="_blank">Github</a></li>
+                    <li><img src="./assets/instagram-logo-instagram-icon-transparent-free-png.png" alt="ig" class="icon"><a href="https://instagram.com" target="_blank"> Instagram</a></li>
+                    <li><img src="./assets/Facebook_Logo_2023.png" alt="facebook" class="icon"><a href="https://facebook.com" target="_blank"> Facebook</a></li>
+                </ul>
+                <p><a href="mailto:wellingtonmulima@gmail.com">wellingtonmulima@gmail.com</a></p>
+                <p>Tel: +254 726124006</p>
             </div>
-            <p>Email:  <a href="mailto:wellingtonmulima@gmail.com">wellingtonmulima@gmail.com</a></p>
-            <p>Tel: +254726124006</p>
-        </section>
+        </section> 
     </main>
-    <footer>
-    copyright &copy; 2025 Wellington Mulima
-    </footer>
+   <footer>
+        <p>Copyright &copy; 2025 | Wellington Mulima</p>
+    </footer> 
     <script src="script.js"></script>
 </body>
 </html>

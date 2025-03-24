@@ -6,52 +6,26 @@
     #hamburger-nav{
         display: flex;
     }
-
-    header{
-        padding: 3rem 5%;
-        top: 0;
-        left: 0;
-        
-    }
-
-    .home-content{
-        margin-top: 10rem;
-    }
-
-    section{
-        padding: 0 5%;
-        height: fit-content;
-    }
-
-    .services{
-        margin-top: 20px;
-    }
-
-    .service-content{
-        font-size: 1.2rem;
-    }
-
-    .projects, .contact{
-        margin-top: 2rem;
-        
-    }
-
-    .contact{
-        height: 50vh;
-        padding: 15px 0;
-    }
-
-    footer{
-        padding: 0 5%;
-    }
-
 }
 
-@media screen and(max-width:768px){
-    .contact{
-        padding: 10px 0;
-        margin-top: 20px;
-        height: 40vh;
-    }
-}
+@media screen and (max-width:765px){
+   .skill figure{
+    width: 200px;
+    height: 200px;
+    margin-top: 15px;
+   }
 
+   .skill{
+    display: grid;
+    place-items: center;
+   
+   }
+
+   .home-content{
+    margin-bottom: 2rem;
+   }
+
+   .about, .skills, .services, .projects{
+    padding: 2rem 5%;
+   }
+}
